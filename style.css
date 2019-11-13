@@ -1,0 +1,143 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Barre de navigation */
+
+  ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(102, 3, 3);
+  list-style:none;
+}
+
+.cache{
+    float: right;
+    display: block;
+}
+
+li a, .deroulant {
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.deroulant-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: white;
+  z-index: 1;
+}
+
+.deroulant-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.deroulant:hover {
+  text-decoration: none;
+  color:rgb(255, 217, 0);
+}
+
+.cache:hover .deroulant-content {
+  display: block;
+}
+  
+  @media screen and (max-width: 959px) {
+    ul.barre {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .logo{
+     width: 10%;
+     height: 10%; 
+     margin-left: 40%;
+  }
+
+  @media screen and (max-width: 959px) {
+    .logo{
+        width: 20%;
+        margin-left: 25%;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  span{
+    color: white;
+    font-size: 30px;  
+    display: block;
+    margin-left: 5px;
+    width: 20%;
+  }
+
+  
+  /* Section*/
+
+  .section{
+      width: 100%;
+      height: 100%;
+      background-color: beige;  
+  }
+
+  /*Sous menu */
+
+  .sousmenu{
+
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    top: 0;
+    background-color: rgb(0,0,0); 
+    opacity: 70%;
+  }
+  
+  
+  .contenu{
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+  }
+  
+  
+  .sousmenu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    display: block; 
+  }
+  
+  
+  .sousmenu .boutton {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sousmenu a {font-size: 20px}
+    .sousmenu.boutton {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
